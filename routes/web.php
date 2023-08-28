@@ -20,10 +20,13 @@ Route::get('/login', function (){return "Login";})->name('site.login');
 
 Route::prefix("/app")->group( function(){
 
-    Route::get('/clientes', function (){return "Clientes";})->name('app.produtos');
-    Route::get('/fornecedores', function (){return "Fornecedores";})->name('app.produtos');
+    Route::get('/clientes', function (){return "Clientes";})->name('app.clientes');
+    Route::get('/fornecedores', 'FornecedoresController@index')->name('app.fornecedores');
     Route::get('/produtos', function (){return "Produtos";})->name('app.produtos');
 });
-Route::fallback(function(){
-    echo 'Essa página não existe';
-    })->name('site.paginaNaoExiste');
+Route::get("/teste/{p1}/{p2}", "TesteController@teste")->name('teste');
+
+/*Route::fallback(function(){
+//     echo 'Essa página não existe';
+//     })->name('site.paginaNaoExiste');
+*/;
