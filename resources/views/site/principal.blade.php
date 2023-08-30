@@ -1,5 +1,6 @@
 @extends('site.layouts.basico');
 
+    @section('titulo', 'Principal')
     @section('conteudo')
         <div class="topo">
 
@@ -33,7 +34,7 @@
                 </div>
 
                 <div class="video">
-                    <img src="{{ asset('/img/player_video1.png') }}">
+                    <img src="{{ asset('/img/player_video.png') }}">
                 </div>
             </div>
 
