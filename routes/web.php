@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "InicioController@inicio")->name('site.inicio');
-Route::get('/sobre-nos', "SobreController@sobre")->name('site.sobre');
+Route::get('/', "InicioController@inicio")->name('site.index');
+Route::get('/sobre-nos', "SobreController@sobre")->name('site.sobrenos');
 Route::get('/contato', "ContatoController@contato")->name('site.contato');
 Route::get('/login', function (){return "Login";})->name('site.login');
 

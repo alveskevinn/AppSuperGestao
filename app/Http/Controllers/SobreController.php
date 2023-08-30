@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SobreController extends Controller
 {
     public function sobre(){
-        return view("site.sobrenos");
+        return view("site.sobre-nos");
     }
 }
